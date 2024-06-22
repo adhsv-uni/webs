@@ -1,0 +1,18 @@
+<script async>
+    let TOKEN = "114514"
+
+    let token_ = atob(localStorage.getItem('token'))
+    if (token_ !== TOKEN){
+        while (true){
+            let token = prompt("请输入token", "")
+            console.log(token)
+            if (token === TOKEN){
+                localStorage.setItem('token', btoa(token))
+                break
+            }
+        }
+    }
+</script>
+<body style="background-image: url('https://moe.jitsu.top/r18'); background-size: contain; background-repeat: no-repeat; background-position-x: center">
+
+</body>
