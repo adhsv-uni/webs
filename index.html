@@ -1,4 +1,4 @@
-<script async>
+<script>
     let TOKEN = "114514"
 
     let token_ = atob(localStorage.getItem('token'))
@@ -13,6 +13,15 @@
         }
     }
 </script>
-<body style="background-image: url('https://moe.jitsu.top/r18'); background-size: contain; background-repeat: no-repeat; background-position-x: center">
+<div style="text-align: center; width: 100%;">
+  <img src="https://moe.jitsu.top/r18" style="display: inline-block; height: 100%" id="img">
+</div>
 
-</body>
+<script>
+    let img = document.getElementById('img')
+    img.onclick = ()=>{
+        console.log(img)
+    }
+    let req = new XMLHttpRequest()
+    
+</script>
